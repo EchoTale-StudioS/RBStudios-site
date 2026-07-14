@@ -1,34 +1,5 @@
 <!DOCTYPE html><html lang="en" class="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" as="image" href="https://assets.macaly-user-data.dev/cdn-cgi/image/format=webp,width=2000,height=2000,fit=scale-down,quality=90,anim=true/k90umgizgju54wug33lsqkey/new-chat/dsS3dXT-KxPrhpQ8MAcAg.png"><link rel="stylesheet" href="css/index-CAaP8vwr.css" type="text/css" data-precedence="default"><title>About Us | RogueByte Studios</title><meta name="description" content="Learn the story, mission, and values behind RogueByte Studios."><meta property="og:title" content="About Us | RogueByte Studios"><meta property="og:description" content="Learn the story, mission, and values behind RogueByte Studios."><meta property="og:image" content="images/generated-kdmcrj00.png"><link rel="modulepreload" href="/assets/index-DEaZqfjs.js"><link rel="modulepreload" href="/assets/about-DPTdvjDK.js"><link rel="modulepreload" href="/assets/site-layout-CHX6Acfz.js"><link rel="modulepreload" href="/assets/gamepad-2-DTlKrdYw.js"><link rel="icon" type="image/svg+xml" href="images/favicon.svg"><link rel="manifest" href="/manifest.json"><script>
-(async function () {
-  setTimeout(() => {
-    var badge = document.querySelector("a[data-platform-badge]");
-    if (!badge) {
-      return;
-    }
-    badge.style.display = "none";
 
-    // Fetch badge-config
-    fetch("https://www.macaly.com" + '/api/badge-config?chatId=' + encodeURIComponent("sg5l47crcqitqgfocecivv1r"))
-      .then(function (res) {
-        return res.json();
-      })
-      .then(function (data) {
-        // Set badge link and show badge
-        if (badge) {
-          badge.href = data.link;
-          var isTextBadge = typeof data.content === "string" && !!data.content.trim();
-          if (isTextBadge) {
-            // The default SVG draws its own pill; custom text needs one on the anchor.
-            badge.style.cssText += "align-items:center;justify-content:center;border-radius:999px;background:#000;color:#fff;padding:8px 12px;font-family:Arial,sans-serif;font-size:13px;font-weight:600;line-height:16px;max-width:calc(100vw - 20px);overflow:hidden;text-decoration:none;text-overflow:ellipsis;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,0.18);z-index:2147483647;";
-            badge.textContent = data.content;
-          }
-          if (data.badgeVisibility) {
-            badge.style.display = isTextBadge ? "inline-flex" : "block";
-          }
-        }
-      });
-  }, 200);
-})();
 </script><script>
 (function() {
  var s = document.createElement('script');
